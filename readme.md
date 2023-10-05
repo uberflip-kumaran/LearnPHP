@@ -1,11 +1,17 @@
-Running PHP in VS Code:
+#
+# PHP BASICS
+
+<!-- TOC -->
+
+### Running PHP in VS Code:
 Install Code Runner Extension.  Code Runner is a vscode extension that can execute PHP scripts. It's easy to use and doesn't require any additional configuration.
 
 
 
 
-PHP BASICS
 
+
+## Variables
 In PHP, declaring variables is a fundamental step in programming. Variables are used to store and manipulate data in your scripts. Here's how you can declare variables in PHP:
 
 1. **Basic Variable Declaration:**
@@ -58,6 +64,7 @@ function myFunction() {
     echo $localVar;
 }
 
+## Math Operators
 myFunction(); // outputs: I am local
 // echo $localVar; // This would result in an error because $localVar is not accessible here.
 ```
@@ -127,6 +134,7 @@ $result = (10 + 5) * 2; // $result will be 30
 
 These are just some of the basic math operators available in PHP. You can also work with more advanced mathematical functions provided by the PHP math library if needed.
 
+## String Concantenation
 String concatenation in PHP involves combining two or more strings together to create a longer string. In PHP, you can use the concatenation operator (`.`) to achieve this. Here's how you do string concatenation:
 
 ```php
@@ -172,6 +180,8 @@ $message = 'Your score is: $score'; // Output: Your score is: $score
 
 Using the concatenation operator is a common practice in PHP when you need to build strings dynamically, such as when creating messages, URLs, or other text-based outputs.
 
+
+## Comparison Operators
 Comparison operators in PHP are used to compare values and determine relationships between them. They return a boolean value (`true` or `false`) based on whether the comparison is true or false. Here are the common comparison operators in PHP:
 
 1. **Equal (==):**
@@ -238,6 +248,8 @@ $result = $number1 <= $number2; // $result will be false
 
 These operators are commonly used in conditions and comparisons within control structures like `if` statements, loops, and more. They allow you to make decisions and perform actions based on the relationships between values in your PHP code.
 
+
+## Escape Characters
 In PHP, escape characters are used to insert special characters within strings or to represent characters that would otherwise be difficult to include. The escape character in PHP is the backslash `\`. Here are some common uses of escape characters in PHP:
 
 1. **Inserting Special Characters:**
@@ -285,6 +297,7 @@ $path = "C:\\xampp\\htdocs\\index.php"; // Represents a Windows file path
 
 Escape characters are crucial for handling special characters and building strings with dynamic content in PHP. They help ensure that your strings are correctly formatted and interpreted by the PHP interpreter.
 
+## If Else Statements
 In PHP, you can use `if` and `else` statements to control the flow of your program based on certain conditions. These conditional statements allow you to execute different blocks of code depending on whether a condition is true or false. Here's the basic syntax for `if` and `else` statements:
 
 ```php
@@ -368,6 +381,8 @@ In this example, the message displayed depends on both the age and student statu
 
 These are the basics of using `if` and `else` statements in PHP. They are fundamental for controlling the flow of your PHP scripts based on conditions.
 
+
+## Numeric Arrays
 In PHP, numeric arrays are collections of values indexed by numerical keys. These arrays are also known as indexed arrays because you access elements by their numeric index. Here's how you can create, manipulate, and work with numeric arrays in PHP:
 
 **Creating Numeric Arrays:**
@@ -453,6 +468,7 @@ if (isset($fruits[1])) {
 
 Numeric arrays are versatile and widely used in PHP for storing and manipulating lists of data. They are particularly useful when you need to work with ordered collections of values.
 
+## Associative Arrays
 In PHP, associative arrays are collections of key-value pairs. Each element in an associative array has a unique key associated with it, and you access the values using these keys. Associative arrays are also sometimes referred to as dictionaries or maps in other programming languages. Here's how you can create, manipulate, and work with associative arrays in PHP:
 
 **Creating Associative Arrays:**
@@ -568,6 +584,8 @@ if (array_key_exists("model", $car)) {
 
 Associative arrays are useful when you need to work with data that has meaningful keys associated with it, making it easier to access and manipulate specific values in your PHP code.
 
+## Array Count
+
 In PHP, you can count the number of elements in an array using the `count()` function. This function returns the number of elements (both numeric and associative) in an array. Here's how you use it:
 
 ```php
@@ -592,6 +610,9 @@ echo "The number of elements in the associative array is: $count"; // Output: Th
 ```
 
 The `count()` function is a versatile way to determine the size of an array, and it's commonly used in PHP to check the length of arrays, which can be useful for looping through elements, validating data, and making decisions based on array sizes.
+
+
+## While Loops
 
 In PHP, you can use a `while` loop to repeatedly execute a block of code as long as a specified condition is true. The basic syntax of a `while` loop is as follows:
 
@@ -641,6 +662,8 @@ Count: 5
 
 `while` loops are useful for situations where you want to repeat an action until a certain condition is met. Be cautious when using `while` loops to ensure that the condition eventually becomes `false`, or you risk creating an infinite loop. To avoid infinite loops, make sure that the condition inside the loop has a way to become `false`.
 
+
+## For Loops
 In PHP, you can use a `for` loop to execute a block of code a specified number of times. A `for` loop is ideal when you know in advance how many times you want to repeat an action. The basic syntax of a `for` loop is as follows:
 
 ```php
@@ -684,9 +707,10 @@ Count: 4
 Count: 5
 ```
 
+
 `for` loops are particularly useful when you need to perform a specific action a known number of times, such as iterating through arrays, processing data, or implementing other repetitive tasks in PHP.
 
-
+## Foreach Loops
 In PHP, you can use a `foreach` loop to iterate over the elements of an array or the key-value pairs of an associative array. This loop is particularly convenient when you want to perform an action for each element in the array without explicitly tracking an index or counter. Here's the basic syntax of a `foreach` loop:
 
 ```php
@@ -758,6 +782,7 @@ age: 30
 `foreach` loops are a convenient way to iterate through arrays in PHP, especially when you need to work with each element or key-value pair individually.
 
 
+## Functions
 In PHP, you can define and use functions to encapsulate a block of code that performs a specific task or operation. Functions make your code modular, reusable, and easier to maintain. Here's how you create and use functions in PHP:
 
 **Defining a Function:**
@@ -852,6 +877,7 @@ greetWithDefault("Alice"); // Prints "Hello, Alice!"
 These are the fundamentals of creating and using functions in PHP. Functions are essential for organizing and reusing code in your PHP scripts, making them more efficient and maintainable.
 
 
+## Random Function
 In PHP, you can generate random numbers, strings, and make random choices using various built-in functions from the `rand()` family and other randomization functions. Here are some commonly used random functions in PHP:
 
 1. **Generating Random Integers:** You can use the `rand()` function or the `random_int()` function to generate random integers within a specified range.
@@ -903,6 +929,7 @@ In PHP, you can generate random numbers, strings, and make random choices using 
 These random functions in PHP allow you to generate random data for various purposes, including simulations, randomization, cryptographic operations, and more. Choose the function that best suits your specific requirements.
 
 
+## Date Function
 In PHP, you can work with dates and times using a wide range of built-in functions and classes from the `date` and `time` extensions. Here are some common date-related tasks and the corresponding PHP functions:
 
 1. **Getting the Current Date and Time:**
@@ -970,6 +997,8 @@ In PHP, you can work with dates and times using a wide range of built-in functio
 
 These are just some of the basic date and time operations you can perform in PHP. The language provides extensive functionality for working with dates and times, making it versatile for handling various date-related tasks in your web applications or scripts.
 
+
+## String Manipulation Functions
 In PHP, you can perform various string manipulation operations to modify, concatenate, search, and extract substrings from strings. Here are some common string manipulation functions and techniques in PHP:
 
 1. **Concatenation:**
