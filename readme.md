@@ -1,13 +1,30 @@
 #
 # PHP BASICS
 
-<!-- TOC -->
+<!-- toc -->
+
+  * [Running PHP in VS Code:](#running-php-in-vs-code)
+- [Variables](#variables)
+- [String Concantenation](#string-concantenation)
+- [Comparison Operators](#comparison-operators)
+- [Escape Characters](#escape-characters)
+- [If Else Statements](#if-else-statements)
+- [Numeric Arrays](#numeric-arrays)
+- [Associative Arrays](#associative-arrays)
+- [Array Count](#array-count)
+- [While Loops](#while-loops)
+- [For Loops](#for-loops)
+- [Foreach Loops](#foreach-loops)
+- [Functions](#functions)
+- [Random Function](#random-function)
+- [Date Function](#date-function)
+- [String Manipulation Functions](#string-manipulation-functions)
+- [Include Function](#include-function)
+
+<!-- tocstop -->
 
 ### Running PHP in VS Code:
 Install Code Runner Extension.  Code Runner is a vscode extension that can execute PHP scripts. It's easy to use and doesn't require any additional configuration.
-
-
-
 
 
 
@@ -1143,5 +1160,6 @@ It's important to note that if the file specified in `include` is not found, PHP
 require 'filename.php';
 ```
 
+## Include Function
 In most cases, `include` is used when you want to include a file but can continue execution if the file is missing. Use `require` when the included file is essential to the operation of your script, and the script should not continue without it.
 
