@@ -1,9 +1,11 @@
 #
-# PHP BASICS
+# Learn PHP 
 
 <!-- toc -->
-
+#### Getting Started
   * [Running PHP in VS Code:](#running-php-in-vs-code)
+    
+#### PHP Basics
 - [Variables](#variables)
 - [String Concantenation](#string-concantenation)
 - [Comparison Operators](#comparison-operators)
@@ -23,9 +25,9 @@
 
 <!-- tocstop -->
 
-### Running PHP in VS Code:
+## Running PHP in VS Code:
 Install Code Runner Extension.  Code Runner is a vscode extension that can execute PHP scripts. It's easy to use and doesn't require any additional configuration.
-
+###
 
 
 ## Variables
