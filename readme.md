@@ -1117,7 +1117,7 @@ In PHP, you can perform various string manipulation operations to modify, concat
 
 These are some of the fundamental string manipulation techniques in PHP. PHP offers many more functions and methods for working with strings, so you can choose the one that best suits your specific needs.
 
-
+## Include Function
 In PHP, you can use the `include` function to include the contents of one PHP file within another PHP file. This is a powerful feature that allows you to modularize your code by breaking it into separate files and then including those files where needed. It's particularly useful for code reuse and maintaining clean, organized codebases.
 
 Here's the basic syntax of the `include` function:
@@ -1169,6 +1169,5 @@ It's important to note that if the file specified in `include` is not found, PHP
 require 'filename.php';
 ```
 
-## Include Function
 In most cases, `include` is used when you want to include a file but can continue execution if the file is missing. Use `require` when the included file is essential to the operation of your script, and the script should not continue without it.
 
