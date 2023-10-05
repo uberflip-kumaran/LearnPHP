@@ -26,12 +26,14 @@
 <!-- tocstop -->
 
 ## Running PHP in VS Code:
-Install Code Runner Extension.  Code Runner is a vscode extension that can execute PHP scripts. It's easy to use and doesn't require any additional configuration.
+
 ```
 brew --version
 brew install php
 php --version
 ```
+Running PHP in VSCode
+Install Code Runner Extension.  Code Runner is a vscode extension that can execute PHP scripts. It's easy to use and doesn't require any additional configuration.
 ###
 
 
